@@ -1,7 +1,5 @@
 discord 
 emoji
 asyncio 
-random 
-time 
 datetime 
 
