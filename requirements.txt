@@ -2,4 +2,4 @@ discord
 emoji
 asyncio 
 datetime 
-
+numpy
