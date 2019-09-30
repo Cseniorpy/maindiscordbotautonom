@@ -1,12 +1,7 @@
-git+git://github.com/Rapptz/discord.py.git@async#egg=discord for Discord.py
-
-git version: 0.23.0
-
-Libs
-----
+discord 
 emoji
-asyncio
-random
-time
-datetime
+asyncio 
+random 
+time 
+datetime 
 
