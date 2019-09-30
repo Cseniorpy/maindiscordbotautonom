@@ -11,7 +11,7 @@ import numpy
 
 
 bot = commands.Bot(command_prefix='.')
-TOKEN = 'NjI3ODEwODQ1OTcxMzE2NzM3.XZH6JA.8Go-hxeagvH0JAc09uU5dq7Dpjk'
+TOKEN = 'NjI3ODEwODQ1OTcxMzE2NzM3.XZJQLA.zBAegqHyhyI4shaNYznrmtRZLOI'
 bot.remove_command('help')
 
 
