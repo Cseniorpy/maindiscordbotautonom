@@ -1,1 +1,1 @@
-worker: python database.py
+worker: python maindiscord.py
