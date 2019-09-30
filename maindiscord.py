@@ -4,7 +4,6 @@ import discord
 import time 
 import random 
 import asyncio 
-import numpy
 
 #SELF-MODULES
 #from channelapprove import channel_approve
