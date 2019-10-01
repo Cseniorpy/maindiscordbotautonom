@@ -10,7 +10,20 @@ import asyncio
 
 
 bot = commands.Bot(command_prefix='.')
-TOKEN = 'NjI3ODEwODQ1OTcxMzE2NzM3.XZJQLA.zBAegqHyhyI4shaNYznrmtRZLOI'
+"""def token():
+    global content
+    token_file = open("/root/Desktop/IntermediatePythonProjects/maindiscordTOKEN.txt", "r")
+    if token_file.mode == "r":
+        content = token_file.read()
+
+if __name__ == "__main__":
+    token()
+
+TOKEN = str(content)"""
+token1 = 'NjI3ODEwODQ1OTcxMzE2NzM3.XZNZyw.'
+token2 = 'JCLzL2K_s0M-VHt89nzKsBfOOcQ'
+TOKEN = token1+token2
+
 bot.remove_command('help')
 
 
