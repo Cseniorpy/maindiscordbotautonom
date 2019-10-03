@@ -56,18 +56,18 @@ async def on_ready():
 
     print("BOT is ready!")
 
-"""
+
 @bot.event 
 async def on_member_join(member):
-
+"""
     channel = bot.get_channel(627921483934466072)
     await channel.send(welcome_message)
 """
 
-"""
+
     channel = bot.get_channel(627812771450454046)
     await channel.send("**Hoşgeldin {} :smile:**".format(member.mention))
-"""
+
 
 @bot.event 
 async def on_member_remove(member):
