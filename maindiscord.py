@@ -148,4 +148,36 @@ async def sil(ctx, amount: int):
     else:
         await ctx.send("Bu komutu kullanmak için yetkiye sahip değilsin .. ")
 
+@bot.command()
+async def toplantı(ctx):
+    if not ctx.channel in public_channel_list:
+        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_bot_test))
+
+    else:
+        from datetime import datetime 
+        from datetime import date 
+
+        import time 
+
+
+        current_day = datetime.now().replace(microsecond=0)
+        list_of_fridays = [10,17,24]
+
+
+
+        new_list = []
+        for i in list_of_fridays:
+            name_of_day = datetime(2019, 10, i, 17, 30, 0, 0)
+
+            new_list.append((abs(current_day - name_of_day)))
+
+        next = f"Bir sonraki toplantıya {new_list[0]} saat kaldı"
+
+        final = f"{next[0:25]}gün{next[29:]}"
+
+
+        embed = discord.Embed(title=final, description='', color=0xebde34)
+        await ctx.send(embed = embed)
+
+
 bot.run(TOKEN)
