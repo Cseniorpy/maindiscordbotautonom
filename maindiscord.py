@@ -44,9 +44,12 @@ bot.remove_command('help')
 
 @bot.event
 async def on_ready():
-
+    global public_channel_list
+    global channel_test
     game = discord.Game(".yardım(bot-test)")
     await bot.change_presence(status=discord.Status.idle, activity=game)
+    channel_test = bot.get_channel(627807374736097310)
+    public_channel_list = [channel_test]
     
 
 #----------------------------GLOBAL VARIABLES-------------------------------#
