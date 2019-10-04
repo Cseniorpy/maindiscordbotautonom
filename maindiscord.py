@@ -83,7 +83,7 @@ async def yardım(ctx):
     user = ctx.author
    
     if not ctx.channel in public_channel_list:
-        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_bot_test))
+        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_test))
 
     else:
       
@@ -102,7 +102,7 @@ async def yardım(ctx):
 async def kanal(ctx):
 
     if not ctx.channel in public_channel_list:
-        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_bot_test))
+        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_test))
 
     else:
 
@@ -124,7 +124,7 @@ async def kanal(ctx):
 async def sunucu(ctx):
 
     if not ctx.channel in public_channel_list:
-        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_bot_test))
+        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_test))
 
     else:
 
@@ -154,7 +154,7 @@ async def sil(ctx, amount: int):
 @bot.command()
 async def toplantı(ctx):
     if not ctx.channel in public_channel_list:
-        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_bot_test))
+        await ctx.channel.send("**Bu kanalı kullanmalısın :point_right: {0.mention}**".format(channel_test))
 
     else:
         from datetime import datetime 
