@@ -254,7 +254,7 @@ async def görev(ctx):
 
 
         #emir
-    if ctx.author.id == 627792025764495360:
+    if ctx.author.id == 331426186528030730:
 
         embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
         embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(emir.full))
