@@ -91,7 +91,7 @@ async def yardım(ctx):
 
         embed.add_field(name='**> kanal**', value='```Sunucuda bulunan kanalların açıklamasını gösterir```')
         embed.add_field(name='**> sunucu**', value='```Sunucu hakkında bilgi verir```')
-        #embed.add_field(name='****', value='``````')
+        embed.add_field(name='**> toplantı**', value='````Bir sonraki toplantının vaktini verir``')
         #embed.add_field(name='****', value='``````')
         #embed.add_field(name='****', value='``````')
 
@@ -181,6 +181,140 @@ async def toplantı(ctx):
 
         embed = discord.Embed(title=final, description='', color=0xebde34)
         await ctx.send(embed = embed)
+
+
+
+@bot.command()
+async def görev(ctx):
+    class Objectives: 
+        Common = ['--> Teknofest kuralları okunacak\n--> Discord ve Git altyapısı oluşturulacak\n--> Öğrenci e-posta adresi alınacak']
+        explanation = Common[0]
+        def __init__(self, obj):
+            self.obj = obj
+            self.full = self.explanation + self.obj 
+
+    class Emir(Objectives):
+        Common = ['--> Otonom Teknolojisi\'nin kullanıldığı yarışmaların sunumu yapılacak']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Atakan(Objectives):
+        Common = ['--> Teknofest sunumu yapılacak']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Egemen(Objectives):
+        Common = ["--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek"]
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Rasim(Objectives):
+        Common = ['--> Sponsorluk Dosyası hazırlanacak\n--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Enes(Objectives):
+        Common = ['--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Betül(Objectives):
+        Common = ['--> Sponsorluk Dosyası hazırlanacak']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Ömer(Objectives):
+        Common = ['--> Sponsorluk Dosyası hazırlanacak']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+    class Batuhan(Objectives):
+        Common = ['--> Sponsorluk Dosyası hazırlanacak']
+        explanation = Common[0]
+        def __init__(self):
+            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+
+
+    user = Objectives('new')
+    emir = Emir()
+    atakan = Atakan()
+    egemen = Egemen()
+    rasim = Rasim()
+    enes = Enes()
+    betül = Betül()
+    ömer = Ömer()
+    batuhan = Batuhan()
+
+
+        #emir
+    if ctx.author.id == 627792025764495360:
+
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(emir.full))
+        
+        await ctx.send(embed=embed)
+        #atakan
+    elif ctx.author.id == 512625318981533706:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(atakan.full))
+        
+        await ctx.send(embed=embed)
+        #egemen
+    elif ctx.author.id == 481247706539360266:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(egemen.full))
+        
+        await ctx.send(embed=embed)
+        #rasim
+    elif ctx.author.id == 382604342039019520:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(rasim.full))
+        
+        await ctx.send(embed=embed)
+        #enes
+    elif ctx.author.id == 168810331756429312:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(enes.full))
+        
+        await ctx.send(embed=embed)
+        #betül
+    elif ctx.author.id == 629611959930716160:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(betül.full))
+        
+        await ctx.send(embed=embed)
+        #ömer
+    elif ctx.author.id == 629400019916554262:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(ömer.full))
+        
+        await ctx.send(embed=embed)
+        #batuhan
+    elif ctx.author.id == 389794556901720066:
+    
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(batuhan.full))
+        
+        await ctx.send(embed=embed)
+        #user
+    else:
+        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(user.explanation))
+        
+        await ctx.send(embed=embed)
 
 
 bot.run(TOKEN)
