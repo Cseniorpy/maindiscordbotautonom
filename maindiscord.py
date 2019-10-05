@@ -170,7 +170,7 @@ async def toplantı(ctx):
 
         new_list = []
         for i in list_of_fridays:
-            name_of_day = datetime(2019, 10, i, 17, 30, 0, 0)
+            name_of_day = datetime(2019, 10, i, 14, 30, 0, 0)
 
             new_list.append((abs(name_of_day - current_day)))
 
