@@ -164,7 +164,7 @@ async def toplantı(ctx):
 
 
         current_day = datetime.now().replace(microsecond=0)
-        list_of_fridays = [10,17,24]
+        list_of_fridays = [11,18,25]
 
 
 
@@ -172,7 +172,7 @@ async def toplantı(ctx):
         for i in list_of_fridays:
             name_of_day = datetime(2019, 10, i, 17, 30, 0, 0)
 
-            new_list.append((abs(current_day - name_of_day)))
+            new_list.append((abs(name_of_day - current_day)))
 
         next = f"Bir sonraki toplantıya {new_list[0]} saat kaldı"
 
