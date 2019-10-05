@@ -310,6 +310,10 @@ async def görev(ctx):
         
         await ctx.send(embed=embed)
         #user
+
+    elif ctx.author.id == 629393948594667530:
+        await ctx.send(":eyes:")
+
     else:
         embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
         embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(user.explanation))
