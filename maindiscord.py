@@ -187,7 +187,7 @@ async def toplantı(ctx):
 @bot.command()
 async def görev(ctx):
     class Objectives: 
-        Common = ['--> Resmi e-posta alımı yapılacak\n--> Resmi e-posta adresi ile Github Profili aktifleştirilecek\n--> Teknofest tamamiyle araştırılacak\n--> ']
+        Common = ['--> Resmi e-posta alımı yapılacak\n--> Resmi e-posta adresi ile Github Profili aktifleştirilecek\n--> Teknofest tamamiyle araştırılacak\n ']
         explanation = Common[0]
         def __init__(self, obj):
             self.obj = obj
