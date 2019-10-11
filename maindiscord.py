@@ -247,10 +247,10 @@ async def görev(ctx):
     atakan = Atakan()
     egemen = Egemen()
     rasim = Rasim()
-    enes = Enes()
+    #enes = Enes()
     betül = Betül()
-    ömer = Ömer()
-    batuhan = Batuhan()
+    #ömer = Ömer()
+    #batuhan = Batuhan()
 
 
         #emir
@@ -282,12 +282,12 @@ async def görev(ctx):
         
         await ctx.send(embed=embed)
         #enes
-    elif ctx.author.id == 168810331756429312:
+    #elif ctx.author.id == 168810331756429312:
     
-        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
-        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(enes.full))
+    #    embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+    #    embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(enes.full))
         
-        await ctx.send(embed=embed)
+    #    await ctx.send(embed=embed)
         #betül
     elif ctx.author.id == 629611959930716160:
     
@@ -296,19 +296,19 @@ async def görev(ctx):
         
         await ctx.send(embed=embed)
         #ömer
-    elif ctx.author.id == 629400019916554262:
+    #elif ctx.author.id == 629400019916554262:
     
-        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
-        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(ömer.full))
+    #    embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+    #    embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(ömer.full))
         
-        await ctx.send(embed=embed)
+    #    await ctx.send(embed=embed)
         #batuhan
-    elif ctx.author.id == 389794556901720066:
+    #elif ctx.author.id == 389794556901720066:
     
-        embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
-        embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(batuhan.full))
+    #    embed = discord.Embed(title='**{}**'.format(ctx.author.name.upper()), description='', color=0x03fc73)
+    #    embed.add_field(name='**Haftalık Görevlerin**', value='```{}```'.format(batuhan.full))
         
-        await ctx.send(embed=embed)
+    #    await ctx.send(embed=embed)
         #user
 
     elif ctx.author.id == 629393948594667530:
