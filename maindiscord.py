@@ -164,7 +164,7 @@ async def toplantı(ctx):
 
 
         current_day = datetime.now().replace(microsecond=0)
-        list_of_fridays = [11,18,25]
+        list_of_fridays = [18,25]
 
 
 
@@ -187,41 +187,41 @@ async def toplantı(ctx):
 @bot.command()
 async def görev(ctx):
     class Objectives: 
-        Common = ['--> Teknofest kuralları okunacak\n--> Discord ve Git altyapısı oluşturulacak\n--> Öğrenci e-posta adresi alınacak']
+        Common = ['--> Resmi e-posta alımı yapılacak\n--> Resmi e-posta adresi ile Github Profili aktifleştirilecek\n--> Teknofest tamamiyle araştırılacak\n--> ']
         explanation = Common[0]
         def __init__(self, obj):
             self.obj = obj
             self.full = self.explanation + self.obj 
 
     class Emir(Objectives):
-        Common = ['--> Otonom Teknolojisi\'nin kullanıldığı yarışmaların sunumu yapılacak']
+        Common = ['--> Trafik işareti ölçeklendirme uyumluluğu araştırılacak\n--> Yeni üyeler için Checklist oluşturulacak']
         explanation = Common[0]
         def __init__(self):
             self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
     class Atakan(Objectives):
-        Common = ['--> Teknofest sunumu yapılacak']
+        Common = ['--> Yeni üyeler için Checklist oluşturulacak\n--> Trafik işareti ölçeklendirme uyumluluğu araştırılacak']
         explanation = Common[0]
         def __init__(self):
             self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
     class Egemen(Objectives):
-        Common = ["--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek"]
+        Common = ["--> Lokal Bilgisayar sistem özellikleri belirlenecek"]
         explanation = Common[0]
         def __init__(self):
             self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
     class Rasim(Objectives):
-        Common = ['--> Sponsorluk Dosyası hazırlanacak\n--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek']
+        Common = ['--> Sponsorluk Dosyası hazırlanacak\n--> Yeni üyeler için Checklist oluşturulacak\n--> Lokal Bilgisayar sistem özellikleri belirlenecek\n--> Trafik işareti ölçeklendirme uyumluluğu araştırılacak']
         explanation = Common[0]
         def __init__(self):
             self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
-    class Enes(Objectives):
-        Common = ['--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek']
-        explanation = Common[0]
-        def __init__(self):
-            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+    #class Enes(Objectives):
+    #    Common = ['--> Google ve Lokal Bilgisayar sistem özellikleri belirlenecek']
+    #    explanation = Common[0]
+    #    def __init__(self):
+    #        self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
     class Betül(Objectives):
         Common = ['--> Sponsorluk Dosyası hazırlanacak']
@@ -229,17 +229,17 @@ async def görev(ctx):
         def __init__(self):
             self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
-    class Ömer(Objectives):
-        Common = ['--> Sponsorluk Dosyası hazırlanacak']
-        explanation = Common[0]
-        def __init__(self):
-            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+    #class Ömer(Objectives):
+    #    Common = ['--> Sponsorluk Dosyası hazırlanacak']
+    #    explanation = Common[0]
+    #    def __init__(self):
+    #        self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
-    class Batuhan(Objectives):
-        Common = ['--> Sponsorluk Dosyası hazırlanacak']
-        explanation = Common[0]
-        def __init__(self):
-            self.full = Objectives.explanation + '\n{}'.format(self.explanation)
+    #class Batuhan(Objectives):
+    #    Common = ['--> Sponsorluk Dosyası hazırlanacak']
+    #    explanation = Common[0]
+    #    def __init__(self):
+    #        self.full = Objectives.explanation + '\n{}'.format(self.explanation)
 
 
     user = Objectives('new')
