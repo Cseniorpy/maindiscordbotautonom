@@ -20,8 +20,8 @@ if __name__ == "__main__":
     token()
 
 TOKEN = str(content)"""
-token1 = 'NjI3ODEwODQ1OTcxMzE2NzM3.XZNZyw.'
-token2 = 'JCLzL2K_s0M-VHt89nzKsBfOOcQ'
+token1 = 'NjI3ODEwODQ1OTcxMzE2NzM3.XaTQnw.'
+token2 = '4ZKRcllc-gtfu8GfZlAsEmZng3U'
 TOKEN = token1+token2
 
 bot.remove_command('help')
